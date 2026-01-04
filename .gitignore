@@ -1,0 +1,94 @@
+# Comprehensive .gitignore for the plc project
+
+# --- Virtual environments ---
+# Local virtualenv directories (Python)
+myvenv/
+myvenv/**
+venv/
+.venv/
+
+# PEP 582
+__pypackages__/
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*$py.class
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dylib
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer / pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python env files
+.env
+.env.*
+
+# --- Node / frontend ---
+# Node modules and build outputs
+node_modules/
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.cache/
+build/
+dist/
+
+# npm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# --- Caches / bundlers ---
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# --- Database / local files ---
+*.sqlite3
+*.db
+*.db-journal
+instance/
+
+# --- Logs ---
+*.log
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Misc ---
+/env.local
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
